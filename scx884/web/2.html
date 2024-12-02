@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+html {
+    height: 100%; /* 背景渐变覆盖整个页面 */
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    background-attachment: fixed; /* 确保背景固定不滚动 */
+}
+
+body {
+    min-height: 100%; /* 内容高度超出时背景依然填充 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+        h1 {
+            color: white;
+        }
+
+        .al {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .dingwei {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 20px;
+            background-color: rgba(151, 149, 240, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .dingwei img {
+            width: 50%; /* 宽度占页面的一半 */
+            height: auto; /* 高度自适应，保持图片比例 */
+            object-fit: cover;
+            margin-left: 0;
+            border-radius: 0;
+        }
+
+        .p {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        .guide{
+            position: fixed;
+            top: 0;
+            right:0;
+            background-color: rgb(136, 243, 243);
+            border-radius: 5px;
+        }
+        .guide li,.guide ul{
+            background-color: inherit;
+        }
+        ul{
+            margin-right: 30px;
+
+        }
+        li{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">兴趣爱好</h1>
+    <div class="al">
+        <div class="dingwei">
+            <img src="../image/3.jpg" alt="羽毛球">
+            <div class="p">
+                <p>打羽毛球</p>
+            </div>
+        </div>
+        <div class="dingwei">
+            <img src="../image/4.jpg" alt="篮球">
+            <div class="p">
+                <p>静静地看书</p>
+            </div>
+        </div>
+        <div class="dingwei">
+            <img src="../image/5.jpg" alt="音乐">
+            <div class="p">
+                <p>做好新时代IT人</p>
+            </div>
+        </div>
+    </div>
+    <div class="guide">
+        <ul type="none">
+            <li><a href="./1.html">上一页</a></li>
+            <li><a href="./3.html">下一页</a></li>
+            <li><a href="../index.html">主页</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
